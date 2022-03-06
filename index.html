@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Monospace , Helvetica, sans-serif;
+        }
+        header2 {
+            background-color: #f4f8fc;
+            /*padding: 0px;*/
+            text-align: left;
+            font-size: 20px;
+            color: white;
+        }
+        /* Estilo de header */
+        header {
+            background-color: #94c6ee;
+            /*padding: 0px;*/
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article {
+            float: center;
+            background-color: #f1f1f1;
+
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #7707;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        footer2 {
+            background-color: rgba(166, 192, 197, 0.467);
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+vainilla {
+  text-align: center;
+  text-transform: uppercase;
+  color: #e2b47e;
+  font-size: 35px;
+}
+chocolate {
+  text-align: center;
+  text-transform: uppercase;
+  color: #291804;
+  font-size: 35px;
+}
+fresa {
+  text-align: center;
+  text-transform: uppercase;
+  color: #bd0f58;
+  font-size: 35px;
+}
+coco {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c9b59e;
+  font-size: 35px;
+}
+pina {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1e530;
+  font-size: 35px;
+}
+neg {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 25px;
+}
+
+.example-contain img  {
+  text-align: center;
+  width: 50px;
+}
+.holder {
+      display: inline;
+    }
+    .holder img {
+      max-height: 40px;
+      max-width: 40px;
+      object-fit: cover;
+    }
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+    </style>
+</head>
+
+<body >
+
+    <header>
+        <img src="/images/cake3.png" alt="spark cake">
+    </header>
+
+    <section>
+        <article>
+            <div class="a">
+                <h2>Nuestros sabores</h2>
+                <p>Puedes escoger entre nuestra gran variedad de sabores</p>
+                <vainilla>Vainilla</vainilla>
+                <chocolate>Chocolate</chocolate>
+                <fresa>Fresa</fresa>
+                <coco>Coco</coco>
+                <pina>Piña</pina>
+            </div>
+            <footer></footer>
+            <div class="a">
+                <h2>Nuestros adornos</h2>
+                <p>Puedes escoger entre nuestra variedad de adornos para tu pastel</p>
+                <div class='holder'> <img src="/images/icon1.png" ></div>
+                <neg>Spiderman</neg>
+                <div class='holder'> <img src="/images/icon2.png" ></div>
+                <neg>Batman</neg>
+                <div class='holder'> <img src="/images/icon3.png" ></div>
+                <neg>Hello Kitty</neg>
+                <div class='holder'> <img src="/images/icon4.png" ></div>
+                <neg>Saint Seiya</neg>          
+            </div>
+            <footer></footer>
+        </article>
+    </section>
+    <section>
+        <footer>
+            <h2>¡Haz tu pedido!</h2>
+            <div>
+                <form action="">
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre..">
+              
+                  <label for="lname">Apellido</label>
+                  <input type="text" id="apellido" name="apellido" placeholder="Apellido..">
+
+                  <label for="lname">Teléfono</label>
+                  <input type="text" id="telefono" name="telefono" placeholder="Telefono..">
+
+                  <label for="lname">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Email..">
+              
+                  <label for="sabores">Sabor del pastel</label>
+                  <select id="sabor" name="sabor">
+                    <option value="vainilla">Vainilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="fresa">Fresa</option>
+                    <option value="coco">Coco</option>
+                    <option value="pina">Piña</option>
+                  </select>
+
+                  <label for="adornos">Adorno</label>
+                  <select id="adorno" name="adorno">
+                    <option value="spiderman">Spiderman</option>
+                    <option value="batman">Batman</option>
+                    <option value="hkitty">Hello Kitty</option>
+                    <option value="sseiya">Saint Seiya</option>
+                  </select>
+                
+                  <input type="submit" value="Enviar">
+                </form>
+              </div>
+        </footer>
+    </section>
+    <footer2>
+        <a href="index_pastelero.html">Vista pastelero</a>
+    </footer2>
+
+
+</body>
+
+</html>
