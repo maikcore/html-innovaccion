@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Monospace , Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header2 {
+            background-color: #f4f8fc;
+            /*padding: 0px;*/
+            text-align: right;
+            font-size: 10px;
+            color: white;
+        }
+        header {
+            background-color: #94c6ee;
+            /*padding: 0px;*/
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article {
+            float: center;
+            background-color: #f1f1f1;
+
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #7707;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        footer2 {
+            background-color: rgba(166, 192, 197, 0.467);
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+vainilla {
+  text-align: center;
+  text-transform: uppercase;
+  color: #e2b47e;
+  font-size: 35px;
+}
+chocolate {
+  text-align: center;
+  text-transform: uppercase;
+  color: #291804;
+  font-size: 35px;
+}
+fresa {
+  text-align: center;
+  text-transform: uppercase;
+  color: #bd0f58;
+  font-size: 35px;
+}
+coco {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c9b59e;
+  font-size: 35px;
+}
+pina {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1e530;
+  font-size: 35px;
+}
+neg {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 25px;
+}
+
+.example-contain img  {
+  text-align: center;
+  width: 50px;
+}
+.holder {
+      display: inline;
+    }
+    .holder img {
+      max-height: 40px;
+      max-width: 40px;
+      object-fit: cover;
+    }
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+    </style>
+</head>
+
+<body >
+
+    <header>
+        <img src="/images/cake3.png" alt="spark cake">
+    </header>
+
+
+    <section>
+        <article>
+            <div class="a">
+                <h2>Conteo de sabores: </h2>
+                <vainilla>Vainilla = 20</vainilla></br>
+                <chocolate>Chocolate = 2</chocolate></br>
+                <fresa>Fresa = 4</fresa></br>
+                <coco>Coco = 4</coco></br>
+                <pina>Piña = 20</pina>
+            </div>
+            <footer></footer>
+            <div class="a">
+                <h2>Conteo de adornos</h2>
+                <div class='holder'> <img src="/images/icon1.png" ></div>
+                <neg>Spiderman = 10</neg></br>
+                <div class='holder'> <img src="/images/icon2.png" ></div>
+                <neg>Batman = 23</neg></br>
+                <div class='holder'> <img src="/images/icon3.png" ></div>
+                <neg>Hello Kitty = 30</neg></br>
+                <div class='holder'> <img src="/images/icon4.png" ></div>
+                <neg>Saint Seiya = 20</neg>          
+            </div>
+            <footer></footer>
+        </article>
+    </section>
+    <section>
+        <footer>
+            <h2>¡PEDIDOS!</h2>
+            <div>
+                  <label for="fname">Nombre = Juan  </label>
+              
+                  <label for="lname">Apellido =  Gabriel </label> </br>
+
+
+                  <label for="lname">Teléfono = 53445566</label>
+
+
+                  <label for="lname">Email = juan.gabriel@juangabriel.com</label> </br>
+
+              
+                  <label for="sabores">Sabor del pastel = Fresa</label>
+
+                  <label for="adornos">Adorno = Spiderman</label>
+              
+              </div>
+              <div>
+                <label for="fname">Nombre = Juan  </label>
+            
+                <label for="lname">Apellido =  Gabriel </label> </br>
+
+
+                <label for="lname">Teléfono = 53445566</label>
+
+
+                <label for="lname">Email = juan.gabriel@juangabriel.com</label> </br>
+
+            
+                <label for="sabores">Sabor del pastel = Fresa</label>
+
+                <label for="adornos">Adorno = Spiderman</label>
+            
+            </div>
+            <div>
+              <label for="fname">Nombre = Juan  </label>
+          
+              <label for="lname">Apellido =  Gabriel </label> </br>
+
+
+              <label for="lname">Teléfono = 53445566</label>
+
+
+              <label for="lname">Email = juan.gabriel@juangabriel.com</label> </br>
+
+          
+              <label for="sabores">Sabor del pastel = Fresa</label>
+
+              <label for="adornos">Adorno = Spiderman</label>
+          
+          </div>
+        </footer>
+    </section>
+
+
+
+</body>
+
+</html>
